@@ -1,0 +1,74 @@
+/** Essential Styles **/
+html,
+body {
+  transition: all 0.5s;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+  height: 100%;
+}
+
+*:link,
+*:visited,
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: linear-gradient(-45deg, #e64818, #fae20f, #e0ff6e, #fca400);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1,
+h2,
+h3, a {
+  font-family: "Gluten", cursive;
+  overflow: visible!important;
+}
+
+h1 {
+  font-size: 4.5em;
+  text-shadow: 2px 2px 0px #9c2f0e;
+}
+
+h2, a {
+  font-size: 3em;
+  text-shadow: 2px 2px 0px #f1ff30;
+}
+
+/** Styles **/
+
+#headercont {
+  margin-top: 25vh;
+}
+
+#btncontainer {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  margin-top: 10vh;
+  transition: all 0.5s;
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: rgb(122, 122, 122)!important;
+  background-color: rgba(175, 214, 0, 0.6);
+  box-shadow: 0px 0px 20px 20px rgb(228, 247, 143);
+}
